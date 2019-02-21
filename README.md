@@ -25,7 +25,12 @@ ijupyter() {
     jupyter notebook Untitled.ipynb </dev/null &>/dev/null &
 }
 
-alias nb = "cd [path_to_your_notebook_folder] && rm -f Untitled.ipynb && cp -fp import_statements.ipynb Untitled.ipynb && jupyter notebook Untitled.ipynb </dev/null &>/dev/null &"
+nb() {
+    cd [path_to_your_notebook_folder] &&
+    rm -f Untitled.ipynb &&
+    cp -fp import_statements.ipynb Untitled.ipynb &&
+    jupyter notebook Untitled.ipynb </dev/null &>/dev/null &
+}
 ```
 
 4.) Insert the absolute path to your notebook folder in both commands.
